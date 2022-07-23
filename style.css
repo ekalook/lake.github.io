@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    Margin: 0;
+    padding: 0;
+}
+
+.img-left {
+    width: 50%;
+    background-image: url(image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+main {
+    width: 100%
+}
+.card {
+    min-width: 600px;
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.parfume-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 35px 45px;
+}
+.header {
+    letter-spacing: 5px;
+    color: grey;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+}
+h2 {
+    font-size:  28px;
+    color: black;
+}
+.description {
+    line-height: 1.5;
+    color : grey;
+    font-size: 17px;
+}
+.price {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+.new {
+    color: rgb(19, 96, 68);
+    font-size: 35px;
+}
+.old {
+    font-size: 15px;
+    color: grey;
+    text-decoration: line-through;
+}
+button {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -10px auto;
+    font-weight: 500;
+    background-color: rgb(19, 96, 68);
+    text-decoration: none;
+    text-align: center;
+}
+.addmore {
+    color: #fff;
+}
+button .fa {
+   margin-right: 10px; 
+   align-items: center;
+}
+button .addmore {
+    text-decoration: none;
+   
+}
+button:hover {
+    background-color: rgb(11, 65, 46);
+}
+
+@media only screen and (min-width: 461px) and (max-width: 768px) {
+    .card {
+        max-width: 600px;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .card {
+        min-width: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .img-left {
+        width: 100%;
+        height: 330px;
+        background-image: url(image-product-mobile.jpg);
+        border-radius: 10px 10px 0 0;
+    }
+    .parfume-right {
+        width: 100%;
+        row-gap: 12px;
+        padding: 30px;
+        border-radius: 0 0 10px 10px;
+    }
+    .header {
+        font-size: 10px;
+    }
+    .description {
+        width: 70%;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        line-height: 1.5;
+        font-size: 12px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 1;
+    }
+    button {
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+}
